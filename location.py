@@ -15,3 +15,7 @@ class Location:
     def short_string(self) -> str:
         """function to return longitude and latitude as string"""
         return f"Longitude and latitude {self.longitude}, {self.latitude}"
+
+    def create_location(self):
+        """create location"""
+        location1 = Location(0, 0)

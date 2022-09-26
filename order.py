@@ -39,7 +39,7 @@ class Order:
 
     def create_order(self):
         """create_order"""
-        oder1 = Order(7, 'low', 'Coop', None, 'Visa 4568',
+        #order1 = Order(7, 'low', 'Coop', None, 'Visa 4568',
 
 
 @dataclass
