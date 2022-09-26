@@ -8,8 +8,8 @@ from dataclasses import dataclass
 class Order:
     """python class order that stores data about Order."""
 
-    def __init__(self, orderid, order_priority, sender, location, payment_details, items_list, total_weight, order_status,
-                 order_place_time, order_delivery_time, vehicle):
+    def __init__(self, orderid, order_priority, sender, location, payment_details, items_list, total_weight,
+                 order_status, order_place_time, order_delivery_time, vehicle):
         self.orderid = orderid
         self.order_priority = order_priority
         self.sender = sender
@@ -29,28 +29,29 @@ class Order:
         """function to return order-priority and order-status as string"""
         return f" order-priority and order-status{self.order_priority}, {self.order_status}"
 
-    def get_order_priority(self) -> str:
+    def order_prio(self) -> str:
         """Returns which current status"""
-        return self.current_order_priority
+        return self.order_priority
 
-    def get_order_status(self) -> str:
+    def order_stat(self) -> str:
         """returns which current order status"""
-        return self.current_order_status
+        return self.order_status
 
 
 @dataclass
-class Status:
-    current_order_priority: Optional[Order] = None
-    current_order_status: Optional[Order] = None
+class OrderDetails:
+    """details about priority_status and order status"""
+    order_priority: Optional[Order] = None
+    order_status: Optional[Order] = None
 
-    def priority_status(self) -> str:
+    def priority_stat(self) -> str:
         """priority status"""
-        witch_status = self.current_order_priority.get_order_priority()
-        if self.current_order_priority is not None:
-            return witch_status
+        witch_priority_status = self.order_priority.order_prio()
+        if self.order_priority is not None:
+            return witch_priority_status
 
-    def order_status(self) -> str:
+    def order_stat(self) -> str:
         """order status"""
-        witch_status = self.current_order_status.get_order_status()
-        if self.current_order_status is not None:
+        witch_status = self.order_status.order_stat()
+        if self.order_status is not None:
             return witch_status
