@@ -30,6 +30,9 @@ class PaymentDetail:
         """Returns which payment status"""
         return self.payment_status
 
+    def create_payment(self):
+        payment1 = PaymentDetail("debit card", 123456789, 256, "paid", "1234 1234 1234 1234")
+
 
 @dataclass
 class Payment:
