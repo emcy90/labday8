@@ -3,10 +3,10 @@ class User:
 
     def __init__(self, person_id, name, address, phone, email):
         self.person_id = person_id
-        self.course_name = name
-        self.course_adress = address
-        self.course_phone = phone
-        self.course_email = email
+        self.name = name
+        self.adress = address
+        self.phone = phone
+        self.email = email
 
     def __str__(self):
         return self.short_string()

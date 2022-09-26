@@ -37,6 +37,10 @@ class Order:
         """returns which current order status"""
         return self.order_status
 
+    def create_order(self):
+        """create_order"""
+        oder1 = Order(7, 'low', 'Coop', None, 'Visa 4568',
+
 
 @dataclass
 class OrderDetails:
@@ -55,3 +59,6 @@ class OrderDetails:
         witch_status = self.order_status.order_stat()
         if self.order_status is not None:
             return witch_status
+
+
+
