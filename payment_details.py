@@ -17,4 +17,4 @@ class Payment_detail:
 
     def short_string(self) -> str:
         """function to return payment_method and payment_status as string"""
-        return f"Longitude and latitude {self.payment_method}, {self.payment_status}"
+        return f"payment method and payment status {self.payment_method}, {self.payment_status}"
