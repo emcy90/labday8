@@ -12,5 +12,5 @@ class User:
         return self.short_string()
 
     def short_string(self) -> str:
-        """function to return student-name as string"""
-        return f"Student name {self.name}"
+        """function to return name as string"""
+        return f" name {self.name}"
