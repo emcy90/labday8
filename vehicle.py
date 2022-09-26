@@ -1,8 +1,9 @@
-from typing import Optional
-from dataclasses import dataclass
 """
 vehicle
 """
+
+from typing import Optional
+from dataclasses import dataclass
 
 
 class Vehicle:
@@ -25,6 +26,9 @@ class Vehicle:
     def get_status(self) -> str:
         """Returns which current status"""
         return self.current_status
+
+    def create_vehicle(self):
+        vehicle1 = Vehicle(1, "no", "yes", 100, "free")
 
 
 @dataclass
