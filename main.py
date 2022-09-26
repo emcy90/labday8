@@ -1,16 +1,44 @@
-# This is a sample Python script.
+"""
+main for logistics system
+"""
 
-# Press Skift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def take_an_order():
+    """method for handling taking an order"""
+    pass
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def take_orders():
+    """method to handle the order that was taken"""
+    pass
+
+
+def process_an_order():
+    """method to process an order"""
+    pass
+
+
+def track_order():
+    """method to track the order"""
+    pass
+
+
+def cancel_order():
+    """method to cancel order"""
+    pass
+
+
+def register_new_user():
+    """method to register a new user"""
+    pass
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    take_orders()
+    take_an_order()
+    process_an_order()
+    track_order()
+    cancel_order()
+    register_new_user()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
