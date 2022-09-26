@@ -13,3 +13,6 @@ class Item:
     def short_string(self) -> str:
         """function to return items as string"""
         return f" item name {self.item_name}"
+
+    def create_item(self):
+        item1 = Item("phone-charger", 200, 1, 60)
